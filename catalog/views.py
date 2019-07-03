@@ -46,7 +46,7 @@ def index(request):
     # переменной контекста context
     return render(
         request,
-        'D:\\myPrograms\\some_prog\\locallibrary\\locallibrary\\catalog\\templates\\index.html',
+        'index.html',
         context={'num_books': num_books, 'num_instances': num_instances,
                  'num_instances_available': num_instances_available, 'num_authors': num_authors,
                  'num_genre': num_genre, 'num_book_selection': num_book_selection, 'key_word': key_word,
