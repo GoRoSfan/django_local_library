@@ -6,7 +6,7 @@ from django.conf.urls import url
 urlpatterns = [
     url(r'^$', views.index, name='index'),
 
-    url(r'^books/$', views.BookListView.as_view(), name='books'),
+    url(r'^books/$', views.BookListView.as_view(), name='boks'),
     url(r'^book/(?P<pk>\d+)$', views.BookDetailView.as_view(), name='book-detail'),
 
     url(r'^authors/$', views.AuthorListView.as_view(), name='authors'),
@@ -27,7 +27,7 @@ urlpatterns += [
 ]
 
 urlpatterns += [
-    url(r'^book/create/$', views.BookCreate.as_view(), name='bok_create'),
+    url(r'^book/create/$', views.BookCreate.as_view(), name='book_create'),
     url(r'^book/(?P<pk>\d+)/update/$', views.BookUpdate.as_view(), name='book_update'),
     url(r'^book/(?P<pk>\d+)/delete/$', views.BookDelete.as_view(), name='book_delete'),
 ]
